@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, accelerometerDemo!</string>
+    
     <string name="app_name">accelerometerGPSDemo</string>
+<string name="movingString">Im Moving!</string>
+<string name="notMovingString">Im not moving anymore :(</string>
 </resources>
