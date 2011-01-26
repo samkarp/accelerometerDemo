@@ -6,17 +6,18 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.widget.TextView;
 
 public class accelerometerDemo extends Activity {
 	
-	private EditText screenDisplay;
+	private TextView screenDisplay;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-    	screenDisplay = (EditText) findViewById(R.id.screenDisplayText);
         setContentView(R.layout.main);
+        
+    	screenDisplay = (TextView) findViewById(R.id.screenDisplayText);
         
     	LocationListener gpsListener = new LocationListener(){
     		Location curLocation;
@@ -54,9 +55,9 @@ public class accelerometerDemo extends Activity {
     public void updateDisplay(Boolean isMoving)
     {
     	if (isMoving)
-    		screenDisplay.setText(R.string.movingString);
+    		screenDisplay.setText("I'm moving");
     	else
-    		screenDisplay.setText(R.string.notMovingString);
+    		screenDisplay.setText("I'm not moving anymore");
     		
     }
 }
