@@ -4,4 +4,6 @@
     <string name="app_name">accelerometerGPSDemo</string>
 <string name="movingString">Im Moving!</string>
 <string name="notMovingString">Im not moving anymore :(</string>
+<string name="GPSButtonLabel">GPS</string>
+<string name="AccelerometerButtonLabel">Accelerometer</string>
 </resources>
