@@ -26,7 +26,7 @@ public class GPSUse extends Activity {
 	private Button startButton;
 	private Button stopButton;
 	private String path = Environment.getExternalStorageDirectory().toString();
-	private String FILENAME = "samDemo.log";
+	private String FILENAME = "gpsDemo.log";
 	private BufferedWriter fos;
 	private LocationManager locMan;
 	private LocationListener gpsListener;
@@ -42,6 +42,7 @@ public class GPSUse extends Activity {
         
     	startButton.setOnClickListener(startListener);
     	stopButton.setOnClickListener(stopListener);
+    	stopButton.setEnabled(false);
         
     	screenDisplay = (TextView) findViewById(R.id.screenDisplayText);
     	
@@ -55,6 +56,8 @@ public class GPSUse extends Activity {
     	} catch (IOException ex){
     		ex.printStackTrace();
     	}
+    	startButton.setEnabled(false);
+    	stopButton.setEnabled(true);
     	
     	startService(new Intent(this, BatteryLevelService.class));
         
@@ -101,6 +104,8 @@ public class GPSUse extends Activity {
     public void stopGPS()
     {
     	stopService(new Intent(this, BatteryLevelService.class));
+    	stopButton.setEnabled(false);
+    	startButton.setEnabled(true);
     	
     	locMan.removeUpdates(gpsListener);
     	try{

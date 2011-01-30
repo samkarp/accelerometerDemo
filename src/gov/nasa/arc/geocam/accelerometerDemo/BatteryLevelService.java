@@ -18,7 +18,7 @@ import android.os.IBinder;
 public class BatteryLevelService extends Service {
 	private BroadcastReceiver batteryLevelReceiver;
 	private String path = Environment.getExternalStorageDirectory().toString();
-	private String FILENAME = "samDemo.log";
+	private String FILENAME = "batteryLevel.log";
 	private BufferedWriter fos;
 	
 	@Override
@@ -51,7 +51,7 @@ public class BatteryLevelService extends Service {
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
-        		
+
 		//unregisterReceiver(batteryLevelReceiver);
 		stopSelf();
 	}
@@ -71,6 +71,7 @@ public class BatteryLevelService extends Service {
                 
                 try {
                 	fos.write("Battery Level Remaining: " + level + "% \n");
+                	fos.flush();
             	} catch (IOException ex){
             		ex.printStackTrace();
             	}
