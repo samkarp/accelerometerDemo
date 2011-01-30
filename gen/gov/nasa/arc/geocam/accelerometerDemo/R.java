@@ -14,10 +14,12 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int AccelerometerButton=0x7f050003;
-        public static final int GPSButton=0x7f050002;
+        public static final int AccelerometerButton=0x7f050005;
+        public static final int GPSButton=0x7f050004;
         public static final int notMovingString=0x7f050001;
         public static final int screenDisplayText=0x7f050000;
+        public static final int startButton=0x7f050002;
+        public static final int stopButton=0x7f050003;
     }
     public static final class layout {
         public static final int gpsscreen=0x7f030000;
@@ -29,5 +31,7 @@ public final class R {
         public static final int app_name=0x7f040000;
         public static final int movingString=0x7f040001;
         public static final int notMovingString=0x7f040002;
+        public static final int startLabel=0x7f040005;
+        public static final int stopLabel=0x7f040006;
     }
 }

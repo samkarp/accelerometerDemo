@@ -6,4 +6,6 @@
 <string name="notMovingString">Im not moving anymore :(</string>
 <string name="GPSButtonLabel">GPS</string>
 <string name="AccelerometerButtonLabel">Accelerometer</string>
+<string name="startLabel">Start</string>
+<string name="stopLabel">Stop</string>
 </resources>
