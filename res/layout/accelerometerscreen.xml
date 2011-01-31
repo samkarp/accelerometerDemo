@@ -7,6 +7,6 @@
 
 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/screenDisplayText" android:text="@+id/notMovingString"></TextView>
 
-<Button android:text="@+string/startLabel" android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
-<Button android:text="@+string/stopLabel" android:id="@+id/stopButton" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+<Button android:text="@+string/startLabel" android:id="@+id/startACCButton" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="@+string/stopLabel" android:id="@+id/stopACCButton" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
 </LinearLayout>
