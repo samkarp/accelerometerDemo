@@ -6,4 +6,5 @@
 
 <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/GPSButton" android:text="@+string/GPSButtonLabel"></Button>
 <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/AccelerometerButton" android:text="@+string/AccelerometerButtonLabel"></Button>
+<Button android:id="@+id/MixedButton" android:text="@+string/MixedButtonLabel" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
 </LinearLayout>

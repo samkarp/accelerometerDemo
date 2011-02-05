@@ -13,6 +13,7 @@
         </activity>
 		<activity android:name=".GPSUse"></activity>
 		<activity android:name=".AccelerometerUse"></activity>
+		<activity android:name=".MixedGPSUse"></activity>
 		<service android:enabled="true" android:name=".BatteryLevelService" />
     </application>
 

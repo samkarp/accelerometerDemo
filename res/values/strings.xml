@@ -8,4 +8,5 @@
 <string name="AccelerometerButtonLabel">Accelerometer</string>
 <string name="startLabel">Start</string>
 <string name="stopLabel">Stop</string>
+<string name="MixedButtonLabel">Mixed</string>
 </resources>
