@@ -137,6 +137,11 @@ public class MixedGPSUse extends Activity {
 		    	  {
 		    		  updateCount = 0;
 		    	  }
+		    	  
+		    	  if (updateCount == 2130000000)
+		    	  {
+		    		  updateCount = 1001;
+		    	  }
 
 		      }
 		   }
